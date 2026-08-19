@@ -1,0 +1,17 @@
+---
+import Layout from "./Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+type Props = { title: string; description: string };
+const { title, description } = Astro.props;
+---
+
+<Layout title={`${title} | PrestoMake`} {description}>
+  <Header />
+  <main id="main-content" class="app-layout my-10">
+    <h1 class="text-accent mb-8 text-3xl font-bold">{title}</h1>
+    <article class="app-prose max-w-app"><slot /></article>
+  </main>
+  <Footer />
+</Layout>
