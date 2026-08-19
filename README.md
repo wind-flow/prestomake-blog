@@ -25,8 +25,8 @@ Posts live in `src/content/posts/`. Publish the generated site with:
 
 ## Configuration
 
-- Current site: `https://wind-flow.github.io/prestomake-blog/`
-- Planned custom domain: `https://prestomake.com/`
+- Current site: `https://prestomake.com/`
+- GitHub Pages fallback: `https://wind-flow.github.io/prestomake-blog/`
 - Custom-domain steps: `DOMAIN_SETUP.md`
 - Optional repository variables:
   - `PUBLIC_ADSENSE_CLIENT` (defaults to the approved publisher ID in `astro.config.ts`)

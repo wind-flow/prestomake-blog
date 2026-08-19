@@ -1,14 +1,14 @@
 # PrestoMake domain setup
 
-현재 배포 주소는 `https://wind-flow.github.io/prestomake-blog/`입니다.
+현재 배포 주소는 `https://prestomake.com/`입니다.
 
-`prestomake.com` 연결 시:
+적용된 설정:
 
-1. `astro.config.ts`의 `base`를 `/`로 변경합니다.
-2. `astro-paper.config.ts`의 `site.url`과 `site.profile`을 `https://prestomake.com/` 기준으로 변경합니다.
-3. `public/CNAME`에 `prestomake.com`을 기록합니다.
-4. 도메인 DNS에 GitHub Pages apex A/AAAA 레코드를 설정합니다.
-5. GitHub Pages의 Enforce HTTPS를 활성화합니다.
-6. `robots.txt`의 Sitemap 주소를 새 도메인으로 바꿉니다.
+1. `astro.config.ts`의 `base`는 `/`입니다.
+2. canonical URL, 프로필, RSS, 사이트맵은 `https://prestomake.com/` 기준입니다.
+3. `public/CNAME`은 `prestomake.com`입니다.
+4. Cloudflare DNS의 apex A 레코드는 GitHub Pages 주소 네 개를 사용합니다.
+5. `www` CNAME은 `wind-flow.github.io`를 가리킵니다.
+6. GitHub Pages에서 HTTPS를 강제합니다.
 
 AdSense 게시자 스크립트와 `ads.txt`는 이미 저장소에 반영되어 있습니다.

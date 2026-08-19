@@ -13,6 +13,7 @@ type Props = {
   description?: string;
   ogImage?: string;
   canonicalURL?: string;
+  showAds?: boolean;
 };
 
 const { site } = config;
@@ -22,6 +23,7 @@ const {
   description = site.description,
   ogImage = resolveDefaultOgImagePath(config),
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+  showAds = false,
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.site ?? Astro.url);
@@ -89,7 +91,7 @@ const rssHref = getRelativeLocaleUrl(
     <slot name="head" />
 
     {
-      PUBLIC_ADSENSE_CLIENT && (
+      showAds && PUBLIC_ADSENSE_CLIENT && (
         <script
           is:inline
           async

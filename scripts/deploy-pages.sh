@@ -16,4 +16,4 @@ git -C "$DEPLOY_DIR" commit -m "deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 git -C "$DEPLOY_DIR" remote add origin "$REPO"
 git -C "$DEPLOY_DIR" push --force origin gh-pages
 
-echo "Published: https://wind-flow.github.io/prestomake-blog/"
+echo "Published: https://prestomake.com/"

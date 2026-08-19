@@ -2,11 +2,11 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://wind-flow.github.io/prestomake-blog/",
+    url: "https://prestomake.com/",
     title: "PrestoMake",
     description: "디지털 도구를 빠르게 만들고 제대로 운영하기 위한 실전 가이드입니다.",
     author: "PrestoMake 편집부",
-    profile: "https://wind-flow.github.io/prestomake-blog/about/",
+    profile: "https://prestomake.com/about/",
     ogImage: "prestomake-og.svg",
     lang: "ko",
     timezone: "Asia/Seoul",
