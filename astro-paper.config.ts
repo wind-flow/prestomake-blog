@@ -4,7 +4,7 @@ export default defineAstroPaperConfig({
   site: {
     url: "https://prestomake.com/",
     title: "PrestoMake",
-    description: "디지털 도구를 빠르게 만들고 제대로 운영하기 위한 실전 가이드입니다.",
+    description: "AI와 SaaS로 반복 업무를 줄이는 실전 자동화 가이드입니다.",
     author: "PrestoMake 편집부",
     profile: "https://prestomake.com/about/",
     ogImage: "prestomake-og.svg",
